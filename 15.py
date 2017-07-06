@@ -94,7 +94,7 @@ def plot_images(content_image, style_image, mixed_image):
     plt.show()
     
   
- def mean_squared_error(a, b):
+def mean_squared_error(a, b):
     return tf.reduce_mean(tf.square(a - b))
     
     
@@ -418,7 +418,7 @@ style_layer_ids = list(range(13))
 
 
 
-%%time
+#%%time
 img = style_transfer(content_image=content_image,
                      style_image=style_image,
                      content_layer_ids=content_layer_ids,
